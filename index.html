@@ -906,8 +906,14 @@ function searchQuestion() {
 
 function updateResumeButtonLabel() {
   const store = getStore();
-  const resumeId = store.resume.globalLastId;
-  document.getElementById('resumeBtn').textContent = resumeId ? 'Wróć do ostatniego pytania (' + resumeId + ')' : 'Wróć do ostatniego pytania';
+  const resumeId = store?.resume?.globalLastId;
+  const btn = document.getElementById('resumeBtn');
+  if (!btn) return;
+
+  btn.textContent =
+    resumeId !== undefined && resumeId !== null
+      ? `Wróć do ostatniego pytania (${resumeId})`
+      : 'Wróć do ostatniego pytania';
 }
 
 function updateStats() {
