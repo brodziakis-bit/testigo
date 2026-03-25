@@ -1036,10 +1036,6 @@ function showInstallNotice(message) {
   notice.textContent = message;
   notice.classList.remove('hidden');
 
-  clearTimeout(showInstallNotice._timer);
-  showInstallNotice._timer = setTimeout(() => {
-    notice.classList.add('hidden');
-  }, 3200);
 }
 
 window.addEventListener('beforeinstallprompt', (e) => {
