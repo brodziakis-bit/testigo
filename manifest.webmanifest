@@ -1,0 +1,23 @@
+{
+  "name": "TESTY IGO 2026",
+  "short_name": "IGO 2026",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#166534",
+  "background_color": "#0b1020",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "scope": "./",
+  "lang": "pl",
+  "description": "Aplikacja do nauki TESTY IGO 2026 działająca także offline."
+}
